@@ -1,0 +1,44 @@
+{
+	"name": "Neptune",
+	"version": "0.1",
+	"author": "Park Min Hyeok (@pmh-only) <pmhstudio.pmh@gmail.com>",
+	"url": "https://pmh.codes",
+	"descriptionmsg": "Neptune mediawiki skin",
+	"namemsg": "Neptune",
+	"license-name": "MIT",
+	"type": "skin",
+	"requires": {
+		"MediaWiki": ">= 1.35.0"
+	},
+	"ValidSkinNames": {
+		"neptune": "Neptune"
+	},
+	"MessagesDirs": {
+		"Neptune": "i18n"
+	},
+	"AutoloadClasses": {
+		"SkinNeptune": "Neptune.skin.php"
+	},
+	"ResourceModules": {
+		"skins.neptune": {
+			"styles": {
+				"styles/font-awesome.css": { "media": "screen" },
+				"styles/normalize.css": { "media": "screen" },
+				"styles/noto-sans-kr.css": { "media": "screen" },
+				"styles/github-markdown.css": { "media": "screen" },
+				"styles/main.css": { "media": "screen" }
+			}
+		},
+		"skins.neptune.js": {
+			"scripts": [
+				"scripts/main.js"
+			],
+			"position": "top"
+		}
+	},
+	"ResourceFileModulePaths": {
+		"localBasePath": "",
+		"remoteSkinPath": "Neptune"
+	},
+	"manifest_version": 1
+}
