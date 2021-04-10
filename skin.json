@@ -17,7 +17,8 @@
 		"Neptune": "i18n"
 	},
 	"AutoloadClasses": {
-		"SkinNeptune": "Neptune.skin.php"
+		"SkinNeptune": "Neptune.skin.php",
+		"NeptuneTemplate": "Neptune.template.php"
 	},
 	"ResourceModules": {
 		"skins.neptune": {
