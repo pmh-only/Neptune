@@ -22,10 +22,25 @@ a:visited {
 }
 
 .wikitable {
-  @apply shadow;
+  @apply border-0 rounded bg-transparent;
 }
 
-.wikitable > * > tr > th {
-
+.wikitable > * > tr {
+  @apply border-0;
 }
 
+.wikitable > * > tr > th, .wikitable > * > tr > td {
+  @apply border border-neutral-400 px-2 py-1;
+}
+
+.oo-ui-toolbar {
+  @apply sticky top-0 z-40;
+}
+
+#comment {
+  @apply resize-none shadow border bg-neutral-100 p-3;
+}
+
+.site-button {
+  @apply rounded bg-blue-600 hover:bg-blue-700 text-white px-3 py-2 cursor-pointer shadow;
+}
