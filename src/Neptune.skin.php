@@ -3,13 +3,11 @@
 /**
  * 🚀 Neptune mediawiki skin
  * 
- * @author Park Min Hyeok <pmhstudio.pmh@gmail.com>
- * @copyright 2021. Park Min Hyeok <pmhstudio.pmh@gmail.com>
+ * @author Park Min Hyeok <pmh-only@pmh.codes>
+ * @copyright 2021 - 2022. Park Min Hyeok <pmh-only@pmh.codes>
  * 
  * @see README.md
  * @license MIT
- * 
- * to customize colors: see styles/main.css
  */
 
 class SkinNeptune extends SkinTemplate {

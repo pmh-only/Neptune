@@ -1,7 +1,7 @@
 {
 	"name": "Neptune",
 	"version": "0.1",
-	"author": "Park Min Hyeok (@pmh-only) <pmhstudio.pmh@gmail.com>",
+	"author": "Park Min Hyeok (@pmh-only) <pmh_only@pmh.codes>",
 	"url": "https://pmh.codes",
 	"descriptionmsg": "Neptune mediawiki skin",
 	"namemsg": "Neptune",
@@ -13,29 +13,16 @@
 	"ValidSkinNames": {
 		"neptune": "Neptune"
 	},
-	"MessagesDirs": {
-		"Neptune": "i18n"
-	},
-	"AutoloadClasses": {
-		"SkinNeptune": "Neptune.skin.php",
-		"NeptuneTemplate": "Neptune.template.php"
-	},
 	"ResourceModules": {
 		"skins.neptune": {
 			"styles": {
-				"styles/font-awesome.css": { "media": "screen" },
-				"styles/normalize.css": { "media": "screen" },
-				"styles/noto-sans-kr.css": { "media": "screen" },
-				"styles/github-markdown.css": { "media": "screen" },
-				"styles/main.css": { "media": "screen" }
+				"dist/tailwind.css": { "media": "screen" }
 			}
-		},
-		"skins.neptune.js": {
-			"scripts": [
-				"scripts/main.js"
-			],
-			"position": "top"
 		}
+	},
+	"AutoloadClasses": {
+		"SkinNeptune": "src/Neptune.skin.php",
+		"NeptuneTemplate": "src/Neptune.template.php"
 	},
 	"ResourceFileModulePaths": {
 		"localBasePath": "",

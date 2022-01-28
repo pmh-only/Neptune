@@ -1,0 +1,31 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
+
+html {
+  font-family: 'Noto Sans KR', sans-serif;
+  background-color: #f1f1f1;
+}
+
+a {
+  @apply text-blue-500;
+}
+
+a:visited {
+  @apply text-blue-700;
+}
+
+.createboxInput {
+  @apply shadow rounded;
+}
+
+.wikitable {
+  @apply shadow;
+}
+
+.wikitable > * > tr > th {
+
+}
+
