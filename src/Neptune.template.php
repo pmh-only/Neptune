@@ -18,13 +18,13 @@ class NeptuneTemplate extends BaseTemplate {
                     <?php $this->html( 'title' ); ?>
                   </div>
                   <div class="text-xs text-neutral-500">
-                    프흠위키: 프리미엄 흠터레스팅 위키
+                    프흠위키: 프리 흠터레스팅 위키
                   </div>
                 </div>
               </div>
-              <div id="content">
+              <div id="content" class="text-sm text-neutral-700">
                 <div class="px-5 py-4 min-h-screen">
-                  <div class="text-sm" id="mw-content-text">
+                  <div id="mw-content-text">
                     <?php $this->html( 'bodytext' ); ?>
                   </div>
                 </div>
@@ -57,8 +57,11 @@ class NeptuneTemplate extends BaseTemplate {
                 <a title="레거시 편집 모드로 이동합니다." class="border-b px-3 py-2 hover:bg-neutral-200 hover:text-neutral-700" href="<?php echo $this->data['content_actions']['edit']['href'] ?>">
                   <i class="fas fa-pencil-alt text-neutral-600"></i>
                 </a>
-                <a title="문서의 기여 기록을 확인합니다." class="px-3 py-2 hover:bg-neutral-200 hover:text-neutral-700" href="<?php echo $this->data['content_actions']['history']['href'] ?>">
+                <a title="문서의 기여 기록을 확인합니다." class="border-b px-3 py-2 hover:bg-neutral-200 hover:text-neutral-700" href="<?php echo $this->data['content_actions']['history']['href'] ?>">
                   <i class="fas fa-history text-neutral-600"></i>
+                </a>
+                <a title="위키백과에서 연관된 결과를 보실 수 있습니다." class="px-3 py-2 hover:bg-neutral-200 hover:text-neutral-700" href="https://ko.wikipedia.org/wiki/<?php $this->html( 'title' ); ?>">
+                  <i class="fab fa-wikipedia-w text-neutral-600"></i>
                 </a>
               </nav>
               <nav class="flex flex-row sm:flex-col bg-white shadow rounded-lg">

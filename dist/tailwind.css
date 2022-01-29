@@ -670,6 +670,11 @@ Ensure the default browser behavior of the `hidden` attribute.
   color: rgb(115 115 115 / var(--tw-text-opacity));
 }
 
+.text-neutral-700 {
+  --tw-text-opacity: 1;
+  color: rgb(64 64 64 / var(--tw-text-opacity));
+}
+
 .text-neutral-600 {
   --tw-text-opacity: 1;
   color: rgb(82 82 82 / var(--tw-text-opacity));
@@ -707,7 +712,7 @@ a {
 
 a:visited {
   --tw-text-opacity: 1;
-  color: rgb(29 78 216 / var(--tw-text-opacity));
+  color: rgb(37 99 235 / var(--tw-text-opacity));
 }
 
 .createboxInput {
@@ -718,23 +723,60 @@ a:visited {
 }
 
 .wikitable {
+  border-collapse: separate;
   border-radius: 0.25rem;
   border-width: 0px;
   background-color: transparent;
+  border-spacing: 0px 0px;
+}
+
+.wikitable > caption {
+  margin-bottom: 0.25rem;
 }
 
 .wikitable > * > tr {
   border-width: 0px;
 }
 
+.wikitable > * > tr > th {
+  --tw-bg-opacity: 1;
+  background-color: rgb(245 245 245 / var(--tw-bg-opacity));
+}
+
+.wikitable > * > tr > th:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(229 229 229 / var(--tw-bg-opacity));
+}
+
+.wikitable > * > tr > td:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(245 245 245 / var(--tw-bg-opacity));
+}
+
 .wikitable > * > tr > th, .wikitable > * > tr > td {
   border-width: 1px;
   --tw-border-opacity: 1;
-  border-color: rgb(163 163 163 / var(--tw-border-opacity));
+  border-color: rgb(229 229 229 / var(--tw-border-opacity));
   padding-left: 0.5rem;
   padding-right: 0.5rem;
   padding-top: 0.25rem;
   padding-bottom: 0.25rem;
+}
+
+.wikitable > * > tr:first-child > th:first-child, .wikitable > * > tr:first-child > td:first-child {
+  border-top-left-radius: 0.25rem;
+}
+
+.wikitable > * > tr:first-child > th:last-child, .wikitable > * > tr:first-child > td:last-child {
+  border-top-right-radius: 0.25rem;
+}
+
+.wikitable > * > tr:last-child > th:first-child, .wikitable > * > tr:last-child > td:first-child {
+  border-bottom-left-radius: 0.25rem;
+}
+
+.wikitable > * > tr:last-child > th:last-child, .wikitable > * > tr:last-child > td:last-child {
+  border-bottom-right-radius: 0.5rem;
 }
 
 .oo-ui-toolbar {
@@ -774,6 +816,37 @@ a:visited {
 .site-button:hover {
   --tw-bg-opacity: 1;
   background-color: rgb(29 78 216 / var(--tw-bg-opacity));
+}
+
+h2 {
+  margin-bottom: 0.75rem;
+  margin-top: 2.5rem;
+  --tw-border-opacity: 1;
+  border-bottom-color: rgb(212 212 212 / var(--tw-border-opacity));
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+  font-weight: 700;
+}
+
+.mw-references-wrap {
+  margin-top: 2.5rem;
+  border-top-width: 1px;
+  --tw-text-opacity: 1;
+  color: rgb(163 163 163 / var(--tw-text-opacity));
+}
+
+.references {
+  margin: 0px !important;
+  margin-left: 0.75rem !important;
+}
+
+.ve-ce-nail {
+  display: none;
+}
+
+br {
+  margin-top: 0.75rem;
+  margin-bottom: 0.75rem;
 }
 
 .hover\:bg-neutral-200:hover {

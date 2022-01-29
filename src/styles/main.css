@@ -14,7 +14,7 @@ a {
 }
 
 a:visited {
-  @apply text-blue-700;
+  @apply text-blue-600;
 }
 
 .createboxInput {
@@ -22,15 +22,44 @@ a:visited {
 }
 
 .wikitable {
-  @apply border-0 rounded bg-transparent;
+  @apply border-0 border-separate rounded bg-transparent;
+  border-spacing: 0px 0px;
+}
+
+.wikitable > caption {
+  @apply mb-1;
 }
 
 .wikitable > * > tr {
   @apply border-0;
 }
 
+.wikitable > * > tr > th {
+  @apply bg-neutral-100 hover:bg-neutral-200;
+}
+
+.wikitable > * > tr > td {
+  @apply hover:bg-neutral-100;
+}
+
 .wikitable > * > tr > th, .wikitable > * > tr > td {
-  @apply border border-neutral-400 px-2 py-1;
+  @apply border border-neutral-200 px-2 py-1;
+}
+
+.wikitable > * > tr:first-child > th:first-child, .wikitable > * > tr:first-child > td:first-child {
+  @apply rounded-tl;
+}
+
+.wikitable > * > tr:first-child > th:last-child, .wikitable > * > tr:first-child > td:last-child {
+  @apply rounded-tr;
+}
+
+.wikitable > * > tr:last-child > th:first-child, .wikitable > * > tr:last-child > td:first-child {
+  @apply rounded-bl;
+}
+
+.wikitable > * > tr:last-child > th:last-child, .wikitable > * > tr:last-child > td:last-child {
+  @apply rounded-br-lg;
 }
 
 .oo-ui-toolbar {
@@ -43,4 +72,24 @@ a:visited {
 
 .site-button {
   @apply rounded bg-blue-600 hover:bg-blue-700 text-white px-3 py-2 cursor-pointer shadow;
+}
+
+h2 {
+  @apply text-lg font-bold mb-3 mt-10 border-b-neutral-300;
+}
+
+.mw-references-wrap {
+  @apply border-t mt-10 text-neutral-400;
+}
+
+.references {
+  @apply m-0 ml-3 !important;
+}
+
+.ve-ce-nail {
+  display: none;
+}
+
+br {
+  @apply my-3;
 }
