@@ -2,8 +2,6 @@
 @tailwind components;
 @tailwind utilities;
 
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap');
-
 html {
   font-family: 'Noto Sans KR', sans-serif;
   background-color: #f1f1f1;
@@ -17,8 +15,12 @@ a:visited {
   @apply text-blue-600;
 }
 
-.createboxInput {
-  @apply shadow rounded;
+.searchboxInput {
+  @apply shadow rounded text-center border-neutral-300 cursor-pointer focus:cursor-text focus:text-left transition-all;
+}
+
+.searchbox > .mw-ui-button {
+  @apply hidden;
 }
 
 .wikitable {
@@ -75,7 +77,7 @@ a:visited {
 }
 
 h2 {
-  @apply text-lg font-bold mb-3 mt-10 border-b-neutral-300;
+  @apply text-lg font-bold mb-3 border-b-neutral-300;
 }
 
 .mw-references-wrap {
@@ -92,4 +94,8 @@ h2 {
 
 br {
   @apply my-3;
+}
+
+ul {
+  @apply list-disc;
 }

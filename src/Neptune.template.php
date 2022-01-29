@@ -5,6 +5,7 @@ class NeptuneTemplate extends BaseTemplate {
     $this->data['content_actions']['nstab-main']['text'] = wfMessage('view')->parse();
     $this->html( 'headelement' ); ?>
       <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
 
       <!-- Neptune Skin Start -->
 
@@ -36,10 +37,12 @@ class NeptuneTemplate extends BaseTemplate {
               </div>
             </div>
             <div class="flex flex-row sm:flex-col gap-4 sticky top-0 text-center">
-              <nav class="flex flex-row sm:flex-col bg-white shadow rounded-lg">
-                <a title="대문으로 이동합니다." href="/wiki/대문" class="border-b px-3 py-2 hover:bg-neutral-200 hover:text-neutral-700">
-                  <i class="fas fa-home text-neutral-600"></i>
+              <nav class="flex flex-row sm:flex-col bg-blue-400 shadow rounded-lg">
+                <a title="대문으로 이동합니다." href="/wiki/대문" class="px-3 py-2 hover:bg-blue-500 hover:text-neutral-200 rounded-lg">
+                  <i class="fas fa-home text-neutral-100"></i>
                 </a>
+              </nav>
+              <nav class="flex flex-row sm:flex-col bg-white shadow rounded-lg">
                 <a title="최근 편집된 문서 목록입니다." href="/wiki/특수:최근바뀜" class="border-b px-3 py-2 hover:bg-neutral-200 hover:text-neutral-700">
                   <i class="fas fa-exchange-alt text-neutral-600"></i>
                 </a>
