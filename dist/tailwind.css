@@ -515,11 +515,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   z-index: 30;
 }
 
-.my-5 {
-  margin-top: 1.25rem;
-  margin-bottom: 1.25rem;
-}
-
 .flex {
   display: flex;
 }
@@ -538,6 +533,18 @@ Ensure the default browser behavior of the `hidden` attribute.
 
 .max-w-5xl {
   max-width: 64rem;
+}
+
+.max-w-full {
+  max-width: 100%;
+}
+
+.max-w-screen-lg {
+  max-width: 1024px;
+}
+
+.max-w-screen-sm {
+  max-width: 640px;
 }
 
 .flex-row {
@@ -572,8 +579,12 @@ Ensure the default browser behavior of the `hidden` attribute.
   gap: 0.75rem;
 }
 
-.gap-4 {
-  gap: 1rem;
+.gap-1 {
+  gap: 0.25rem;
+}
+
+.overflow-x-scroll {
+  overflow-x: scroll;
 }
 
 .rounded-lg {
@@ -622,14 +633,19 @@ Ensure the default browser behavior of the `hidden` attribute.
   background-color: rgb(96 165 250 / var(--tw-bg-opacity));
 }
 
-.px-3 {
-  padding-left: 0.75rem;
-  padding-right: 0.75rem;
+.px-0\.5 {
+  padding-left: 0.125rem;
+  padding-right: 0.125rem;
 }
 
 .py-1 {
   padding-top: 0.25rem;
   padding-bottom: 0.25rem;
+}
+
+.px-0 {
+  padding-left: 0px;
+  padding-right: 0px;
 }
 
 .px-5 {
@@ -645,6 +661,11 @@ Ensure the default browser behavior of the `hidden` attribute.
 .py-4 {
   padding-top: 1rem;
   padding-bottom: 1rem;
+}
+
+.px-3 {
+  padding-left: 0.75rem;
+  padding-right: 0.75rem;
 }
 
 .text-center {
@@ -680,14 +701,14 @@ Ensure the default browser behavior of the `hidden` attribute.
   color: rgb(64 64 64 / var(--tw-text-opacity));
 }
 
-.text-neutral-600 {
-  --tw-text-opacity: 1;
-  color: rgb(82 82 82 / var(--tw-text-opacity));
-}
-
 .text-neutral-100 {
   --tw-text-opacity: 1;
   color: rgb(245 245 245 / var(--tw-text-opacity));
+}
+
+.text-neutral-600 {
+  --tw-text-opacity: 1;
+  color: rgb(82 82 82 / var(--tw-text-opacity));
 }
 
 .shadow-lg {
@@ -876,9 +897,8 @@ ul {
   list-style-type: disc;
 }
 
-.hover\:bg-neutral-200:hover {
-  --tw-bg-opacity: 1;
-  background-color: rgb(229 229 229 / var(--tw-bg-opacity));
+.oo-ui-dialog {
+  z-index: 60 !important;
 }
 
 .hover\:bg-blue-500:hover {
@@ -886,9 +906,9 @@ ul {
   background-color: rgb(59 130 246 / var(--tw-bg-opacity));
 }
 
-.hover\:text-neutral-700:hover {
-  --tw-text-opacity: 1;
-  color: rgb(64 64 64 / var(--tw-text-opacity));
+.hover\:bg-neutral-200:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(229 229 229 / var(--tw-bg-opacity));
 }
 
 .hover\:text-neutral-200:hover {
@@ -896,7 +916,17 @@ ul {
   color: rgb(229 229 229 / var(--tw-text-opacity));
 }
 
+.hover\:text-neutral-700:hover {
+  --tw-text-opacity: 1;
+  color: rgb(64 64 64 / var(--tw-text-opacity));
+}
+
 @media (min-width: 640px) {
+  .sm\:my-5 {
+    margin-top: 1.25rem;
+    margin-bottom: 1.25rem;
+  }
+
   .sm\:flex-row {
     flex-direction: row;
   }
@@ -905,7 +935,41 @@ ul {
     flex-direction: column;
   }
 
+  .sm\:gap-4 {
+    gap: 1rem;
+  }
+
   .sm\:px-10 {
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+  }
+}
+
+@media (min-width: 768px) {
+  .md\:flex-row {
+    flex-direction: row;
+  }
+}
+
+@media (min-width: 1024px) {
+  .lg\:my-5 {
+    margin-top: 1.25rem;
+    margin-bottom: 1.25rem;
+  }
+
+  .lg\:flex-row {
+    flex-direction: row;
+  }
+
+  .lg\:flex-col {
+    flex-direction: column;
+  }
+
+  .lg\:gap-4 {
+    gap: 1rem;
+  }
+
+  .lg\:px-10 {
     padding-left: 2.5rem;
     padding-right: 2.5rem;
   }

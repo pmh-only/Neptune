@@ -99,3 +99,7 @@ br {
 ul {
   @apply list-disc;
 }
+
+.oo-ui-dialog {
+  z-index: 60 !important;
+}

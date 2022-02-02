@@ -16,7 +16,7 @@
 	"ResourceModules": {
 		"skins.neptune": {
 			"styles": {
-				"dist/tailwind.css": { "media": "screen" }
+				"dist/tailwind.css": { "media": "all" }
 			}
 		}
 	},

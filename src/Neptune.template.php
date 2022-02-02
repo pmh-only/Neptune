@@ -6,13 +6,15 @@ class NeptuneTemplate extends BaseTemplate {
     $this->html( 'headelement' ); ?>
       <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
       <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500;700;900&display=swap" rel="stylesheet">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
 
       <!-- Neptune Skin Start -->
 
       <?php $this->printTrail(); ?>
         <div class="flex justify-center">
-          <div class="container px-3 justify-center w-full gap-2 items-start py-1 my-5 flex flex-col-reverse sm:flex-row sm:px-10 max-w-5xl">
-            <div class="shadow-lg min-w-full bg-white rounded-lg" >
+          <div class="container px-0.5 py-1 justify-center w-full gap-2 items-start lg:my-5 flex flex-col-reverse lg:flex-row lg:px-10 max-w-5xl">
+            <div class="w-full shadow-lg bg-white rounded-lg" >
               <div class="sticky top-0 z-30">
                 <div class="px-5 py-2 border-t-4 border-t-blue-400 bg-neutral-100 border-b-2 flex gap-3 items-end flex-wrap shadow-sm rounded-t">
                   <div class="text-lg font-bold">
@@ -23,8 +25,8 @@ class NeptuneTemplate extends BaseTemplate {
                   </div>
                 </div>
               </div>
-              <div id="content" class="text-sm text-neutral-700">
-                <div class="px-5 py-4 min-h-screen">
+              <div id="content" class="text-sm w-full text-neutral-700 overflow-x-scroll">
+                <div class="px-5 py-4 w-full min-h-screen" style="max-width: 100vw;">
                   <div id="mw-content-text">
                     <?php $this->html( 'bodytext' ); ?>
                   </div>
@@ -36,13 +38,13 @@ class NeptuneTemplate extends BaseTemplate {
                 <p>허락없이 기재된 특정인의 대한 개인정보는 예고없이 삭제될 수 있습니다. 저작권 및 명예훼손 문의: <a href="mailto:wiki@pmh.codes">wiki@pmh.codes</a></p>
               </div>
             </div>
-            <div class="flex flex-row sm:flex-col gap-4 sticky top-0 text-center">
-              <nav class="flex flex-row sm:flex-col bg-blue-400 shadow rounded-lg">
+            <div class="flex flex-row flex-wrap justify-center lg:flex-col gap-1 lg:gap-4 sticky top-0 text-center">
+              <nav class="flex flex-row lg:flex-col bg-blue-400 shadow rounded-lg">
                 <a title="대문으로 이동합니다." href="/wiki/대문" class="px-3 py-2 hover:bg-blue-500 hover:text-neutral-200 rounded-lg">
                   <i class="fas fa-home text-neutral-100"></i>
                 </a>
               </nav>
-              <nav class="flex flex-row sm:flex-col bg-white shadow rounded-lg">
+              <nav class="flex flex-row lg:flex-col bg-white shadow rounded-lg">
                 <a title="최근 편집된 문서 목록입니다." href="/wiki/특수:최근바뀜" class="border-b px-3 py-2 hover:bg-neutral-200 hover:text-neutral-700">
                   <i class="fas fa-exchange-alt text-neutral-600"></i>
                 </a>
@@ -50,7 +52,7 @@ class NeptuneTemplate extends BaseTemplate {
                   <i class="fas fa-search text-neutral-600"></i>
                 </a>
               </nav>
-              <nav class="flex flex-row sm:flex-col bg-white shadow rounded-lg">
+              <nav class="flex flex-row lg:flex-col bg-white shadow rounded-lg">
                 <a title="보기 모드로 이동합니다." href="<?php echo $this->data['content_actions']['view']['href'] ?>" class="border-b px-3 py-2 hover:bg-neutral-200 hover:text-neutral-700">
                   <i class="fas fa-eye text-neutral-600"></i>
                 </a>
@@ -67,7 +69,7 @@ class NeptuneTemplate extends BaseTemplate {
                   <i class="fab fa-wikipedia-w text-neutral-600"></i>
                 </a>
               </nav>
-              <nav class="flex flex-row sm:flex-col bg-white shadow rounded-lg">
+              <nav class="flex flex-row lg:flex-col bg-white shadow rounded-lg">
     
                 <?php
                 global $wgUser;
