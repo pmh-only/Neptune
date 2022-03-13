@@ -18,10 +18,6 @@ class SkinNeptune extends SkinTemplate {
   public function initPage( OutputPage $out ) {
     parent::initPage( $out );
     $out->addModules( 'skins.neptune.js' );
-  }
-
-  function setupSkinUserCss( OutputPage $out ) {
-    parent::setupSkinUserCss( $out );
     $out->addModuleStyles(
       array(
         'mediawiki.skinning.interface',
