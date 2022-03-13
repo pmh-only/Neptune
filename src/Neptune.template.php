@@ -53,10 +53,10 @@ class NeptuneTemplate extends BaseTemplate {
                 </a>
               </nav>
               <nav class="flex flex-row lg:flex-col bg-white shadow rounded-lg">
-                <a title="보기 모드로 이동합니다." href="<?php echo $this->data['content_actions']['view']['href'] ?>" class="border-b px-3 py-2 hover:bg-neutral-200 hover:text-neutral-700">
+                <a title="보기 모드로 이동합니다." href="<?php echo $this->data['content_actions']['view']['href'] ?? '#' ?>" class="border-b px-3 py-2 hover:bg-neutral-200 hover:text-neutral-700">
                   <i class="fas fa-eye text-neutral-600"></i>
                 </a>
-                <a title="시각 편집 모드로 이동합니다." id="ca-edit" class="border-b px-3 py-2 hover:bg-neutral-200 hover:text-neutral-700" href="<?php echo $this->data['content_actions']['ve-edit']['href'] ?>">
+                <a title="시각 편집 모드로 이동합니다." id="ca-edit" class="border-b px-3 py-2 hover:bg-neutral-200 hover:text-neutral-700" href="<?php echo $this->data['content_actions']['ve-edit']['href'] ?? '#' ?>">
                   <i class="fas fa-pen text-neutral-600"></i>
                 </a>
                 <a title="레거시 편집 모드로 이동합니다." class="border-b px-3 py-2 hover:bg-neutral-200 hover:text-neutral-700" href="<?php echo $this->data['content_actions']['edit']['href'] ?>">
@@ -72,8 +72,7 @@ class NeptuneTemplate extends BaseTemplate {
               <nav class="flex flex-row lg:flex-col bg-white shadow rounded-lg">
     
                 <?php
-                global $wgUser;
-                if ($wgUser->isLoggedIn()) { ?>
+                if ($this->getSkin()->getUser()->isRegistered()) { ?>
                   <a title="파일 업로드" class="border-b px-3 py-2 hover:bg-neutral-200 hover:text-neutral-700" href="https://wiki.pmh.codes/wiki/특수:업로드">
                     <i class="fas fa-cloud-upload-alt text-neutral-600"></i>
                   </a>
