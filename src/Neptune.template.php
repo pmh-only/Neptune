@@ -21,7 +21,7 @@ class NeptuneTemplate extends BaseTemplate {
                     <?php $this->html( 'title' ); ?>
                   </div>
                   <div class="text-xs text-neutral-500">
-                    프흠위키: 프리 흠터레스팅 위키
+                    <?php $this->msg( 'neptune-title' ) ?>
                   </div>
                 </div>
               </div>
