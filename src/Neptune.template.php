@@ -59,10 +59,10 @@ class NeptuneTemplate extends BaseTemplate {
                 <a title="시각 편집 모드로 이동합니다." id="ca-edit" class="border-b px-3 py-2 hover:bg-neutral-200 hover:text-neutral-700" href="<?php echo $this->data['content_actions']['ve-edit']['href'] ?? '#' ?>">
                   <i class="fas fa-pen text-neutral-600"></i>
                 </a>
-                <a title="레거시 편집 모드로 이동합니다." class="border-b px-3 py-2 hover:bg-neutral-200 hover:text-neutral-700" href="<?php echo $this->data['content_actions']['edit']['href'] ?>">
+                <a title="레거시 편집 모드로 이동합니다." class="border-b px-3 py-2 hover:bg-neutral-200 hover:text-neutral-700" href="<?php echo $this->data['content_actions']['edit']['href'] ?? '#' ?>">
                   <i class="fas fa-pencil-alt text-neutral-600"></i>
                 </a>
-                <a title="문서의 기여 기록을 확인합니다." class="border-b px-3 py-2 hover:bg-neutral-200 hover:text-neutral-700" href="<?php echo $this->data['content_actions']['history']['href'] ?>">
+                <a title="문서의 기여 기록을 확인합니다." class="border-b px-3 py-2 hover:bg-neutral-200 hover:text-neutral-700" href="<?php echo $this->data['content_actions']['history']['href'] ?? '#' ?>">
                   <i class="fas fa-history text-neutral-600"></i>
                 </a>
                 <a title="위키백과에서 연관된 결과를 보실 수 있습니다." class="px-3 py-2 hover:bg-neutral-200 hover:text-neutral-700" href="https://ko.wikipedia.org/wiki/<?php $this->html( 'title' ); ?>">
